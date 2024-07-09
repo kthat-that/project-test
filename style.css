@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Poppins'  sans-serif;
+    background-color: #F0F0F2;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: transparent;
+}
+
+.fa-chevron-right{
+    color: gray;
+}
+
+.item{
+    background-color: #FFFFFF;
+    margin-left: auto;
+    box-shadow: rgba(17, 17, 26, 0.08) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+/* ------------timeline----------------- */
+
+.timeline{
+    border-left: 3px solid #e2e8f0;
+    margin-left: 15px;
+     
+}
+
+/* -----------------icon--------------------- */
+
+.timeline .card .card-body .icon{
+   left: -45px;
+   top: 6px;
+   background-color: 320bfeb;
+   position: absolute;
+   align-items: center;
+   text-align: center;
+   line-height: 40px;
+   width: 40px;
+   z-index: 1;
+   margin-bottom: 40px;
+
+}
+
+.timeline .card .card-body .icon i{
+    color: #222d3d;
+    font-size: 22px;
+}
+
+.timeline .card .card-body .icon::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #e2e8f0;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    margin: -4px;
+    border-radius: 50%;
+}
+
+h4{
+    font-weight: 610;
+}
+
+h3{
+    font-weight: bold;
+}
+
+a[aria-expanded="true"] i{
+    transform: rotate(90deg);
+}
